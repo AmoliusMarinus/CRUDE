@@ -6,6 +6,21 @@ myApp.controller('namesCtrl', function($scope, $filter) {
 		$scope.addForm = false;
 		$scope.order = 'name';
 
+		$scope.users = [
+			{id: 1, name:'Jani',country:'Tijuana', salary: 5, email: 'Guithay65@gustr.com'},
+			{id: 2, name:'Carlos',country:'CDMX', salary: 24, email: 'cluphetret@hotmail.com'},
+			{id: 3, name:'Margareth',country:'San Diego', salary: 5, email: 'phitrudreh@yahoo.com'},
+			{id: 4, name:'Hege',country:'Los Angeles', salary: 15, email: 'thapripich@gmail.com'},
+			{id: 5, name:'Luis',country:'Chihuahua', salary: 20, email: 'qakyssaxisu-3687@yopmail.com'}
+			];
+	  
+		  
+	  
+		$scope.orderBy = function(filter){
+			$scope.order = filter;
+		};
+	
+	
 	
 	
 		$scope.editUser = function(user){
